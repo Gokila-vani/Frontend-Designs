@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.google.com/specimen/Outfit');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color:hsl(212, 45%, 89%);
+      font-family: 'Outfit', sans-serif;
+      
+    }
+    .container{
+      
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 20px 20px;
+    max-width: 50%;
+    height: 60vh;
+    position: absolute;
+    top:50%;
+    transform:translate(-50%,-50%);
+    left:50%;
+    /* right:-50% */
+    }
+    img{
+      height:250px;
+      width:250px;
+      border-radius: 10px;
+    }
+    section{
+      text-align: center;
+      width:250px;
+      font-weight: 400;
+      color:hsl(220, 15%, 55%)
+    }
+     
+    section h3{
+      font-weight: 700;
+      /* text-indent: 15px; */
+      color :black
+    }
+
+    @media (max-width: 480px) {
+
+      .container{
+        width:200px;
+        text-align:center;
+        font-size: 15px;
+        height: 310px;
+      }
+
+     img{
+        height:90%;
+        width:90%;
+        text-align: center;
+     }
+     section {
+      margin-top: -5px;
+      width:95%;
+      text-align:center;
+      font-weight: 400;
+     }
+    }
+   
+  </style>
+</head>
+<body>
+<div class="container">
+  <section>
+    <picture>
+      <img src="../images/image-qr-code.png" alt="QR code Image"/>
+    </picture>
+  </section>
+  <section>
+    <h3>Improve your front-end skills by building projects</h3>
+
+   <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    
+  </section>
+</div>
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gokila</a>.
+  </div>
+</footer>
+
+
+
+  <script src="'./index.js"></script>
+</body>
+</html>
